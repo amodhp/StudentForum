@@ -5,12 +5,12 @@ user:{
     type: mongoose.Schema.Types.ObjectId,
     ref:'user'
 },
-company: {
-    type: String
-  },
-  website: {
-    type: String
-  },
+// company: {
+//     type: String
+//   },
+//   website: {
+//     type: String
+//   },
   location: {
     type: String
   },
@@ -25,9 +25,9 @@ company: {
   bio: {
     type: String
   },
-  githubusername: {
-    type: String
-  },
+  // githubusername: {
+  //   type: String
+  // },
 
   date: {
     type: Date,
