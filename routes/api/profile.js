@@ -12,7 +12,7 @@ const { response } = require("express");
 //@access  Private
 router.get("/me", auth, async (req, res) => {
   try {
-    const profile = await Profile.findOne({ user: req.user.id }).populate(
+    const profile = await Profile.findOne({ user:req.user.id }).populate(
       "user",
       ["name", "avatar"]
     );
@@ -95,7 +95,7 @@ router.post(
   }
 );
 
-//@route   GET api/profile/me
+//@route   GET api/profile
 //@desc    Get all profiles
 //@access  Public
 
