@@ -10,7 +10,7 @@ const UserPosts = ({ user, getPosts, post: { posts } }) => {
   }, [getPosts]);
   return (
     <>
-      {posts.filter((post) => post.name === user.name).length != 0 ? (
+      {(posts.filter((post) => post.name === user.name)).length != 0 ? (
         <Fragment>
           <h1 className=" text-primary">Your Posts Till date-</h1>
 

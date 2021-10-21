@@ -1,10 +1,20 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
+  --primary-color: #006d77;
+  --dark-color: #051213;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
+}
+header{
+  /* Enable flex mode. */
+  display: flex; 
+
+  /* Spread out the elements inside the header. */
+  justify-content: space-between;
+
+  /* Align items vertically in the center. */
+  align-items: center;
 }
 
 * {
@@ -314,7 +324,12 @@ button {
 
 .navbar ul {
   display: flex;
+  
+ 
+ 
+ 
 }
+
 
 .navbar a {
   color: #fff;
@@ -329,6 +344,22 @@ button {
 .navbar .welcome span {
   margin-right: 0.6rem;
 }
+
+/*Footer*/
+.footer{
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #051213;
+  color:white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  
+}
+
+
 
 /* Landing Page */
 .landing {
@@ -425,33 +456,8 @@ button {
   border-bottom: #ccc 1px dotted;
 }
 
-.profile-exp > div:last-child,
-.profile-edu > div:last-child {
-  border: 0;
-}
 
-.profile-exp p,
-.profile-edu p {
-  margin: 0.5rem 0;
-}
 
-.profile-github {
-  grid-area: github;
-}
-
-.profile-github .repo {
-  display: flex;
-}
-
-.profile-github .repo > div:first-child {
-  flex: 7;
-  flex-basis: 70%;
-}
-
-.profile-github > div:last-child {
-  flex: 3;
-  flex-basis: 20%;
-}
 
 /* Posts Page */
 .post-form .post-form-header {
